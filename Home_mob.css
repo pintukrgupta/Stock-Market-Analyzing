@@ -1,0 +1,61 @@
+/* THis is use for responsive of website in mobile phone */
+/* Navigation */
+#navbar{
+    flex-direction: column;
+}
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 5px;
+    padding-bottom:8px;
+}
+/* Home section */
+#home{
+   height: 480px;
+   padding: 3px 68px;
+}
+#home::before{
+    height: 480px;
+ }
+ #home p{
+     font-size: 13px;
+ }
+/* Service section */
+#services{
+flex-direction: column;
+}
+#servies .box{
+        padding: 14px;
+        margin: 2px 0px;
+        margin-bottom: 20px;
+}
+/* client section  */
+#clients{
+     flex-wrap: wrap;
+     padding: 8px;
+}
+#client-section::before{
+    position: absolute;
+    width: 100%;
+    height: 200%;
+}
+#client-section{
+    height: 377px;
+}
+#client img{
+    width: 40px;
+    padding: 0px 6px;
+    height: auto;
+}
+/* contact us section */
+#contact-box form{
+     width: 80%;     /*  There will change form width in mobile */
+}
+/* footer */
+/* Utility Classes */
+.h-primary{
+    font-size:26px;
+}
+.btn{
+    font-size: 13px;
+    padding: 4px 8px;
+}
