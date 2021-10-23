@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+.popup{
+  background-color: rgb(209, 221, 231);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   /* display: none;  All form will hide  */
+}
+.popup-content{
+  height: 350px;
+  width: 500px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+.input-container {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.close{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size:18px;
+    cursor: pointer;
+}
+.close:hover{
+    color: blue;
+}
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
+
+/* Styling for password div */
+.forgot-pass a{
+    color: #3498db;
+    text-decoration: none;
+}
+.forgot-pass a:hover{
+    text-decoration: underline;
+}
+
+
+/* Set a style for the submit button */
+.btn {
+  background-color:#fff;
+  color: #34495e;
+  font-weight: bolder;
+  font-size: 18px;
+  border-radius: 5px;
+  box-shadow: 6px 6px 29px -4px rgba(0, 0,0, 75);
+  margin: 10px 0px;
+  padding: 10px 35px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-decoration: none;
+  transition: 0.4s;
+  margin-left: 150px;
+}
+
+.btn:hover {
+  background:#34495e;
+  color: #efff;
+  opacity: 1;
+}
+/* Styling for bellow  */
+.signup-link{
+    text-align: center;
+    margin: 25px;
+}
+.signup-link a:hover{
+    color: #3498db;
+    text-decoration: none;
+}
+</style>
+</head>
+<body>
+  <!-- <a href="#" class="btn" id="button">click here</a> -->
+  <div class="popup">
+    <div class="popup-content">
+     <a href="Home.html"> <img href src="images/closeh.png" alt="close" class="close"></a>
+<!-- <form action="/action_page.php" style="max-width:500px;margin:auto"> -->
+    <!-- <label for="" class="close-btn fas fa-times"></label> -->
+    <h2 style="color:rgb(6, 134, 134);">Login</h2>
+
+  <div class="input-container">
+    <i class="fa fa-envelope icon"></i>
+    <input class="input-field" type="text" placeholder="Email or Phone" name="email">
+  </div>
+  <br>
+  
+  <div class="input-container">
+    <i class="fa fa-key icon"></i>
+    <input class="input-field" type="password" placeholder="Password" name="psw" required>
+   </div>
+   <div class="forgot-pass">
+       <a href="#">Forgot Password?</a>
+   </div>
+   <br>
+   <a href="#" class="btn" >Login</a>
+  <!-- <button type="submit" class="btn">Login</button> -->
+  <br><div class="signup-link">Dont't have an account?<a href="#"> Signup now</a></div>
+<!-- </form> -->
+</div>
+</div>
+<script>
+  alert("Please login ");
+  document.getElementById("button").addEventListener("click",function(){
+    document.querySelector(".popup").style.display="flex";
+  })
+  document.querySelector(".close").addEventListener("click",function(){
+    document.querySelector(".popup").style.display="none";
+  })
+</script>
+</body>
+</html>

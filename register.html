@@ -1,0 +1,111 @@
+
+<html>
+    <head>
+        <title>register page </title>
+        <style>
+    body {
+      font-family: Arial;
+      background-color: rgb(183, 204, 211);
+      /* background: url(images/register.jpg); */
+      align-items: center;
+    }
+    .pform{
+        margin: 50px 300px;
+
+    }
+    /* Full-width input fields */
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0 10px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+    }
+    
+    hr {
+      border: 1px solid #f1f1f1;
+      margin-bottom: 25px;
+    }
+    
+    .submit {
+      background-color: #3b7c3d;
+      color: white;
+      padding: 15px 10px;
+      margin: 8px 10px;
+      border: none;
+      cursor: pointer;
+      width: 30%;
+      opacity: 0.9;
+    }
+    .submit:hover{
+      background-color: white;
+      color:black;
+    }
+    .reset {
+      background-color: #0e8a0e;
+      color: rgb(230, 218, 218);
+      padding: 15px 10px;
+      margin: 8px 10px;
+      border: none;
+      cursor: pointer;
+      width: 30%;
+      opacity: 0.9;
+    }
+    .reset:hover{
+      background-color:black;
+      color:white;
+    }
+    
+    /* Add a blue text color to links */
+    a {
+      color: blue;
+    }
+    
+    </style>
+    <script>
+        function validateForm()
+        {
+           var x = document.forms["myForm"]["fname"].value;
+           if(x=="" || x==null)
+           {
+               alert("First name is required");
+               return false;
+           }
+           var y=document.forms["myForm"]["pass"].value;
+          if(y==""|| x==null){
+              alert("Please enter password ");
+              return false;
+          }
+        }
+    </script>
+    </head>
+    <body >
+        <div class="pform">
+            
+        <form name="myForm" action="welcome.php" onsubmit="return validateForm()" method="get" required >
+            <h1>Register now</h1>
+        <p>Register for get special facility of stock market </p>
+        <hr>
+        <div class="input-container">
+                <i class="fa fa-user icon"></i>
+                 <lable for="fname"><b>first name:</b>
+                </lable> <input type="text" id="fname"placeholder="Enter your first name">&nbsp&nbsp&nbsp 
+            </div>
+        <lable for="lname"><b>last name:</b></lable>
+         <input type="text" placeholder="Enter your last name"><br><br>
+          <b>Email Id:</b><input type="text" placeholder="Enter your mail id">&nbsp&nbsp&nbsp <b>select your gender</b><input type="radio" name="gender" id="male" value="male"><lable for="male">male</lable>&nbsp<input type="radio" name="gender" id="female" value="female"><lable for="female">female</lable>&nbsp<input type="radio" name="gender" id="other" value="other"><lable for="other">other</lable><br><br>
+              <b>password:</b><input for="pass" type="password" placeholder="Enter your password"><br><br>
+           <b>Repeat Password :</b><input type="password" placeholder="Repeat password"><br><br>
+           <p>	I accept all the <a href="#"> terms & condition </a>.&nbsp <input type="radio" value="ok"></p><br>
+            <div class="sub">
+        <button type="submit" class="submit">submit</button>
+        <input type="reset" class="reset">
+            </div>
+              
+                <center><p>Already have an account? <a href="loginpage.html">Sign in</a>.</p></center>
+        </form>
+    </div>
+    </body>
+    </html>
+    
