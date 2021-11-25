@@ -1,650 +1,723 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>1_project</title>
-    <link rel="icon" href="images/icon.jpg">
-    <link rel="stylesheet" href="Home.css" class="rel">
-      <link rel="stylesheet" media="screen and (max-height:700px )" href="Home_mob.css"> <!--Including this because we want to make responsive website -->
-      <!-- <script src="Home.js"></script> -->
-</head>
-<body>
+    <link rel="icon" href="images/icon.jpg" />
+    <link rel="stylesheet" href="Home.css" class="rel" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-height:700px )"
+      href="Home_mob.css"
+    />
+    <!--Including this because we want to make responsive website -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- <script src="Home.js"></script> -->
+  </head>
+  <body>
     <!-- for head section -->
-    <nav id="navbar" > 
-        <div id="logo">
+    <nav id="navbar">
+      <div id="logo">
         <!-- <img src="images/img3.jpg" alt="pintukrgupta.com"> -->
         <i>Your Money </i>
-
-         </div> 
-    <ul>
-         <li class="item"><a href="#home">Home</a></li>
-         <li class="item"><a href="#about">About</a></li>
-         <li class="item"><a href="#markets">Markets</a></li>
-         <li class="item"><a href="#news">News</a></li>
-         <li class="item"><a href="#index fund">Index fund</a></li>
-         <li class="item"><a href="#contact">contact us</a></li>
-         <li class="item"><a href="#know More">Know More</a></li>
-         <div class="search" >
+      </div>
+      <ul>
+        <li class="item"><a href="#home">Home</a></li>
+        <li class="item"><a href="#about">About</a></li>
+        <li class="item"><a href="#markets">Markets</a></li>
+        <li class="item"><a href="#news">News</a></li>
+        <li class="item"><a href="#index fund">Index fund</a></li>
+        <li class="item"><a href="#contact">contact us</a></li>
+        <li class="item"><a href="#know More">Know More</a></li>
+        <!-- <div class="search" >
              <input type="text" name="search" id="myInput" onkeyup="searchFun()"class="searchbar"  placeholder="Search here">
-         </div>
-         <a href="loginpage.html" class="login" id="button">Login</a>
-             <a href="register.html" class="signup" id="signbutton">Sign up</a>
-
-         
-    </ul>
-</nav>
-<!-- For home section  -->
-<div id="home">
-</div>
-
-      <!-- for list of company  -->
-<div id="table_div">
-  <caption ><strong > &nbsp&nbsp&nbsp&nbsp&nbsp Nifty 50 companies </strong></caption> 
-    <table id="tstyle">
-      <tr class="thstyle">
-        <th>#</th>
-        <th class="tabledata"> Stock </th>
-        <th class="tabledata"> Price </th>
-        <th class="tabledata"> Market Cap </th>
-        <th class="tabledata"> P/E </th>
-        <th class="tabledata"> Market Data </th>
-        <th class="tabledata"> Research </th>
-        <th class="tabledata"> Last 1 Month</th>
-        </tr>
-        <tr>
-        <td > 1. </td>
-        <td class="tabledata"> Reliance Industries ltd</td>
-        <td class="tabledata"> Price </td>
-        <td class="tabledata"> Market Cap </td>
-        <td class="tabledata"> P/E </td>
-        <td class="tabledata"> Last 1 Month</td>
-        <td class="tabledata"> Market Data </td>
-        <td class="tabledata"> Graph </td>
-        </tr>
-        <tr>
-        <td > 2. </td>
-        <td class="tabledata"> HDFC Bank Ltd. </td>
-        <td class="tabledata"> Price </td>
-        <td class="tabledata"> Market Cap </td>
-        <td class="tabledata"> P/E </td>
-        <td class="tabledata"> Last 1 Month</td>
-        <td class="tabledata"> Market Data </td>
-        <td class="tabledata"> P/E </td>
-        </tr>
-        <tr>
-            <td > 3. </td>
-            <td class="tabledata"> Infosys Ltd </td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-        <tr>
-            <td > 4. </td>
-            <td class="tabledata"> HDFC Ltd </td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-        <tr>
-            <td > 5. </td>
-            <td class="tabledata"> ICIC Bank Ltd </td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-        <tr>
-            <td > 6. </td>
-            <td class="tabledata"> Tata Consultancy Service Ltd </td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-        <tr>
-            <td > 7. </td>
-            <td class="tabledata"> Kotak Mahindra Bank Ltd </td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-        <tr>
-            <td > 8. </td>
-            <td class="tabledata"> Hindustan Unilever Ltd </td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-        <tr>
-            <td > 9. </td>
-            <td class="tabledata"> ITC Ltd </td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-        <tr>
-            <td > 10. </td>
-            <td class="tabledata"> Larsen & Tourbro Ltd </td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-        <tr>
-            <td > 11. </td>
-            <td class="tabledata"> Bajaj Finance Ltd </td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-        <tr>
-            <td > 12. </td>
-            <td class="tabledata"> Axix Bank Ltd </td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-        <tr>
-            <td > 13. </td>
-            <td class="tabledata"> State Bank Of India </td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-        <tr>
-            <td > 14. </td>
-            <td class="tabledata"> Bharti Airtel Ltd </td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-        <tr>
-            <td > 15. </td>
-            <td class="tabledata"> Asian Paints Ltd </td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-        <tr>
-            <td > 16. </td>
-            <td class="tabledata"> HCL Technology </td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-        <tr>
-            <td > 17. </td>
-            <td class="tabledata"> Bajaj Finserv Ltd </td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-        <tr>
-            <td > 18. </td>
-            <td class="tabledata"> Tata Steal Ltd </td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-        <tr>
-            <td > 19. </td>
-            <td class="tabledata"> Maruti Suziki India Ldt </td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-        <tr>
-            <td > 20. </td>
-            <td class="tabledata"> Wipro Ltd </td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-        <tr>
-            <td > 21. </td>
-            <td class="tabledata"> Titan Company Ltd </td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-        <tr>
-            <td > 22. </td>
-            <td class="tabledata"> Sun Pharmaceutical Industries Ltd </td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-        <tr>
-            <td > 23. </td>
-            <td class="tabledata"> UltraTech Cement Ltd </td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-        <tr>
-            <td > 24. </td>
-            <td class="tabledata"> Tech Mahindra Ltd </td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-        <tr>
-            <td > 25. </td>
-            <td class="tabledata"> Mahindra & Mahindra Ltd </td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-        <tr>
-            <td > 26. </td>
-            <td class="tabledata"> Hindalco Industies Ltd </td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-        <tr>
-            <td > 27. </td>
-            <td class="tabledata"> Nestle India Ltd </td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-        <tr>
-            <td > 28. </td>
-            <td class="tabledata"> Indusland Bank Ltd </td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-        <tr>
-            <td > 29. </td>
-            <td class="tabledata"> HDFC Life Indusurance Co. </td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-        <tr>
-            <td > 30. </td>
-            <td class="tabledata">  NTPC Ltd </td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-         <tr>
-            <td > 31. </td>
-            <td class="tabledata">  JSW Steel Ltd. </td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-         <tr>
-            <td > 32. </td>
-            <td class="tabledata">Power Grid Corporation of India Ltd.</td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-         <tr>
-            <td > 33. </td>
-            <td class="tabledata">Grasim Industries Ltd.</td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-         <tr>
-            <td > 34. </td>
-            <td class="tabledata"> Divi's Laboratories Ltd. </td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-         <tr>
-            <td > 35. </td>
-            <td class="tabledata"> Dr. Reddy's Laboratories Ltd.</td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-         <tr>
-            <td > 36. </td>
-            <td class="tabledata">Tata Motors Ltd.</td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-         <tr>
-            <td > 37. </td>
-            <td class="tabledata">Adani Port and Special Economic Zone Ltd.</td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-         <tr>
-            <td > 38. </td>
-            <td class="tabledata">Sbi Life Insurance Co.</td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-         <tr>
-            <td > 39. </td>
-            <td class="tabledata">Oil And National Gas Corporation Ltd.</td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-         <tr>
-            <td > 40. </td>
-            <td class="tabledata">Bajaj Auto Ltd.</td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-         <tr>
-            <td > 41. </td>
-            <td class="tabledata">Cipla Ltd.</td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-         <tr>
-            <td > 42. </td>
-            <td class="tabledata">Tata Consumer Products Ltd.</td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-         <tr>
-            <td > 43. </td>
-            <td class="tabledata">Britannia Industries Ltd.</td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-         <tr>
-            <td > 44. </td>
-            <td class="tabledata">Bharat Petroleum Corp. Ltd.</td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-         <tr>
-            <td > 45. </td>
-            <td class="tabledata">UPL Ltd.</td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-         <tr>
-            <td > 46. </td>
-            <td class="tabledata">Eicher Motars Ltd.</td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-         <tr>
-            <td > 47. </td>
-            <td class="tabledata">Coal India Ltd.</td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-         <tr>
-            <td > 48. </td>
-            <td class="tabledata">Shree Cemeent Ltd.</td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-         <tr>
-            <td > 49. </td>
-            <td class="tabledata">Hero MotoCorp Ltd.</td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-        <tr>
-            <td > 50. </td>
-            <td class="tabledata">Indian Oil Corporation Ltd.</td>
-            <td class="tabledata"> Price </td>
-            <td class="tabledata"> Market Cap </td>
-            <td class="tabledata"> P/E </td>
-            <td class="tabledata"> Last 1 Month</td>
-            <td class="tabledata"> Market Data </td>
-            <td class="tabledata"> P/E </td>
-        </tr>
-    </table>
-</div>
-<!-- for services section -->
-<section class="services-container" >
-    <h1 class="h-primary center">Our Services</h1> <!-- Center class automaticaly center the text -->
-    <div id="services">
-        <div class="box">
-            <img src="cloth1.jpg" alt="">
-            <h2 class="h-secondry center">Cloth ordering </h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, cumque.</p>
-        </div>
-        <div class="box">
-            <img src="4.jpg" alt="">
-            <h2 class="h-secondry center">See the items </h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, cumque.</p>
-
-        </div>
-        <div class="box">
-            <img src="3.jpg" alt="">
-            <h2 class="h-secondry center">Your favorite </h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, cumque.</p>
-
-        </div>
-    </div>
-</section>
-<!-- for client section -->
-<section id="client-section">
-    <h1 class="h-primary center">Our clients</h1>
-<div id="clients">
-    <div class="client-item">
-        <img src="apple.png" alt="our client">
-    </div>
-    <div class="client-item">
-        <img src="micro.png" alt="our client">
-    </div>
-    <div class="client-item">
-        <img src="apple.png" alt="our client">
-    </div>
-    <div class="client-item">
-        <img src="micro.png" alt="our client">
-    </div>
-</div>
-</section>
-<!-- contact section -->
-<section id="contact">
-    <h1 class="h-primary center">Contact us</h1>
-    <div id="contact-box">
-        <form action="">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" placeholder="Enter your Name">
-            </div>
-            <div class="form-group">
-                <label for="email">email</label>
-                <input type="email" name="name" id="email" placeholder="Enter your email">
-            </div>
-            <div class="form-group">
-                <label for="phone">phone </label>
-                <input type="phone" name="name" id="phone" placeholder="Enter your phone no">
-            </div>
-            <div class="form-group">
-                <label for="name">Comment anything</label>
-                <textarea name="message" id="message" cols="10" rows="4"></textarea>
-                <input type="submit">
-            </div>
+             <button type="submit"><i class="fa fa-search"></i></button>
+         </div> -->
+        <form class="example" action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search" />
+          <button type="submit"><i class="fa fa-search"></i></button>
         </form>
+
+        <a href="loginpage.html" class="login" id="button">Login</a>
+        <a href="register.html" class="signup" id="signbutton">Sign up</a>
+      </ul>
+    </nav>
+    <!-- For home section  -->
+    <div id="home"></div>
+
+    <!-- for upper gain and lowest down -->
+    <section id="client-section">
+      <span><h2 class="center">Highest gain today</h2></span>
+
+      <div id="clients">
+        <div class="client-item">
+          <img src="apple.png" alt="xyz" />
+        </div>
+        <div class="client-item">
+          <img src="micro.png" alt="xyz" />
+        </div>
+        <div class="client-item">
+          <img src="apple.png" alt="fhs" />
+        </div>
+        <div class="client-item">
+          <img src="micro.png" alt="efh" />
+        </div>
+      </div>
+    </section>
+
+    <!-- .......  -->
+    <caption>
+      <h3 style="margin-left: 30px">Nifty 50 companies</h3>
+    </caption>
+    <table id="stockslist">
+      <tr>
+        <th>#</th>
+        <th>Stocks</th>
+        <th>open</th>
+        <th>High</th>
+        <th>Low</th>
+        <th>P/E Ratio</th>
+        <th>Market Cap.</th>
+        <th>Last 1 Month</th>
+      </tr>
+      <tr>
+        <td>1.</td>
+        <td class="company"> <a href="https://www.bseindia.com/stock-share-price/reliance-industries-ltd/reliance/500325/" style=" text-decoration: none;">Reliance Industries ltd</a> </td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">Graph</td>
+      </tr>
+      <tr>
+        <td>2.</td>
+        <td class="company">HDFC Bank Ltd.</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>3.</td>
+        <td class="company">Infosys Ltd</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      
+      <tr>
+        <td>4.</td>
+        <td class="company">HDFC Ltd</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>5.</td>
+        <td class="company">ICIC Bank Ltd</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>6.</td>
+        <td class="company">Tata Consultancy Service Ltd</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>7.</td>
+        <td class="company">Kotak Mahindra Bank Ltd</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>8.</td>
+        <td class="company">Hindustan Unilever Ltd</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>9.</td>
+        <td class="company">ITC Ltd</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>10.</td>
+        <td class="company">Larsen & Tourbro Ltd</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>11.</td>
+        <td class="company">Bajaj Finance Ltd</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>12.</td>
+        <td class="company">Axix Bank Ltd</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>13.</td>
+        <td class="company">State Bank Of India</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>14.</td>
+        <td class="company">Bharti Airtel Ltd</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>15.</td>
+        <td class="company">Asian Paints Ltd</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>16.</td>
+        <td class="company">HCL Technology</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>17.</td>
+        <td class="company">Bajaj Finserv Ltd</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>18.</td>
+        <td class="company">Tata Steal Ltd</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>19.</td>
+        <td class="company">Maruti Suziki India Ldt</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>20.</td>
+        <td class="company">Wipro Ltd</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>21.</td>
+        <td class="company">Titan Company Ltd</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>22.</td>
+        <td class="company">Sun Pharmaceutical Industries Ltd</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>23.</td>
+        <td class="company">UltraTech Cement Ltd</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>24.</td>
+        <td class="company">Tech Mahindra Ltd</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>25.</td>
+        <td class="company">Mahindra & Mahindra Ltd</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>26.</td>
+        <td class="company">Hindalco Industies Ltd</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>27.</td>
+        <td class="company">Nestle India Ltd</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>28.</td>
+        <td class="company">Indusland Bank Ltd</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>29.</td>
+        <td class="companycompany">HDFC Life Indusurance Co.</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="companycompany">P/E</td>
+      </tr>
+      <tr>
+        <td>30.</td>
+        <td class="company">NTPC Ltd</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>31.</td>
+        <td class="company">JSW Steel Ltd.</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>32.</td>
+        <td class="company">Power Grid Corporation of India Ltd.</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>33.</td>
+        <td class="company">Grasim Industries Ltd.</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>34.</td>
+        <td class="companycompany">Divi's Laboratories Ltd.</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="companycompany">P/E</td>
+      </tr>
+      <tr>
+        <td>35.</td>
+        <td class="companycompany">Dr. Reddy's Laboratories Ltd.</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="companycompany">P/E</td>
+      </tr>
+      <tr>
+        <td>36.</td>
+        <td class="companycompany">Tata Motors Ltd.</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="companycompany">P/E</td>
+      </tr>
+      <tr>
+        <td>37.</td>
+        <td class="companycompany">Adani Port and Special Economic Zone Ltd.</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="companycompany">P/E</td>
+      </tr>
+      <tr>
+        <td>38.</td>
+        <td class="companycompany">Sbi Life Insurance Co.</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="companycompany">P/E</td>
+      </tr>
+      <tr>
+        <td>39.</td>
+        <td class="companycompany">Oil And National Gas Corporation Ltd.</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="companycompany">P/E</td>
+      </tr>
+      <tr>
+        <td>40.</td>
+        <td class="companycompany">Bajaj Auto Ltd.</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="companycompany">P/E</td>
+      </tr>
+      <tr>
+        <td>41.</td>
+        <td class="companycompany">Cipla Ltd.</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="companycompany">P/E</td>
+      </tr>
+      <tr>
+        <td>42.</td>
+        <td class="company">Tata Consumer Products Ltd.</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>43.</td>
+        <td class="company">Britannia Industries Ltd.</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>44.</td>
+        <td class="company">Bharat Petroleum Corp. Ltd.</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>45.</td>
+        <td class="company">UPL Ltd.</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>46.</td>
+        <td class="company">Eicher Motars Ltd.</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>47.</td>
+        <td class="company">Coal India Ltd.</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>48.</td>
+        <td class="company">Shree Cemeent Ltd.</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>49.</td>
+        <td class="company">Hero MotoCorp Ltd.</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>50.</td>
+        <td class="company">Indian Oil Corporation Ltd.</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+    </table>
+    <!-- ........  -->
+    <!-- for list of company  -->
+    <div id="table_div">
+      <caption>
+        <strong> &nbsp&nbsp&nbsp&nbsp&nbsp Nifty 50 companies </strong>
+      </caption>
+      <table id="tstyle">
+        <tr class="thstyle">
+         
+      </table>
     </div>
-</section>
-<!-- footer area  -->
-<footer>
-    <div class="center">
-        copyright &copy; www.guptafashion.com All right reserved.
-        Website is design by Pintu Kr Gupta
-    </div>
-</footer>
-<script>
-    function myFunction() {
-        var input, filter,table,tr,td, i, txtValue;
+    <!-- for services section -->
+    <section class="services-container">
+      <h1 class="h-primary center">Your invested stock performance</h1>
+      <!-- Center class automaticaly center the text -->
+      <div id="services">
+        <div class="box">
+          <img src="cloth1.jpg" alt="" />
+          <h2 class="h-secondry center">Tata Motors</h2>
+          <p>You wanted it for long term investment</p>
+        </div>
+        <div class="box">
+          <img src="4.jpg" alt="" />
+          <h2 class="h-secondry center">IRCTC</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias,
+            cumque.
+          </p>
+        </div>
+        <div class="box">
+          <img src="3.jpg" alt="" />
+          <h2 class="h-secondry center">Your favorite</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias,
+            cumque.
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="3.jpg" alt="" />
+          <h2 class="h-secondry center">Your favorite</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias,
+            cumque.
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="3.jpg" alt="" />
+          <h2 class="h-secondry center">Your favorite</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias,
+            cumque.
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="3.jpg" alt="" />
+          <h2 class="h-secondry center">Your favorite</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias,
+            cumque.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section id="contact">
+      <h1 class="h-primary center">Contact us</h1>
+      <div id="contact-box">
+        <form action="">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your Name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">email</label>
+            <input
+              type="email"
+              name="name"
+              id="email"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">phone </label>
+            <input
+              type="phone"
+              name="name"
+              id="phone"
+              placeholder="Enter your phone no"
+            />
+          </div>
+          <div class="form-group">
+            <label for="name">Comment anything</label>
+            <textarea name="message" id="message" cols="10" rows="4"></textarea>
+            <input type="submit" />
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- footer area  -->
+    <footer>
+      <div class="center">
+        copyright &copy; www.guptafashion.com All right reserved. Website is
+        design by Pintu Kr Gupta
+      </div>
+    </footer>
+    <script>
+      function myFunction() {
+        var input, filter, table, tr, td, i, txtValue;
         input = document.getElementById("myInput");
         filter = input.value.toUpperCase();
         table = document.getElementById("myUL");
         tr = tr.getElementsByTagName("tr");
         for (i = 0; i < li.length; i++) {
-            td = tr[i].getElementsByTagName("td")[0];
-            txtValue = td.textContent || td.innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                tr[i].style.display = "";
-            } else {
-                tr[i].style.display = "none";
-            }
+          td = tr[i].getElementsByTagName("td")[0];
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
         }
-    }
+      }
     </script>
-</body>
+  </body>
 </html>
